@@ -1,24 +1,26 @@
 public class CurrentConditionsDisplay implements Observer, DisplayElement{
     private float temperature;
     private float humidity;
-    private float pressure;
     private WeatherData weatherData;
 
     public CurrentConditionsDisplay(WeatherData weatherData) {
-
         this.weatherData = weatherData;
+        this.weatherData.registerObserver(this);
+        System.out.println("CurrentConditionsDisplay 등록");
+        display();
     }
 
     @Override
     public void update() {
         this.temperature = weatherData.getTemperature();
         this.humidity = weatherData.getHumidity();
-        this.pressure = weatherData.getPressure();
+
+        System.out.println("CurrentConditionsDisplay 업데이트");
         display();
     }
 
     @Override
     public void display() {
-        System.out.println(String.format("현재 상태: %f , 온도: %f, 기압: %f", this.temperature, this.humidity, this.pressure));
+        System.out.println(String.format(">> [CurrentConditionsDisplay Status] 온도: %f , 습도: %f", this.temperature, this.humidity));
     }
 }
