@@ -6,10 +6,10 @@ public class Main {
         CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
         weatherData.registerObserver(currentDisplay);
 
-        currentDisplay.display();
+//        currentDisplay.display();
 
         weatherData.setMeasurements(80,65, 30.4f);
 
-        currentDisplay.display();
+//        currentDisplay.display();
     }
 }
