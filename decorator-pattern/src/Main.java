@@ -6,7 +6,7 @@ public class Main {
 
         Soy soy = new Soy(houseBlend);
         Mocha mocha = new Mocha(soy);
-        Mocha mocha2 = new Mocha(mocha);
+        Mocha mocha2 = new Mocha(mocha);  // TODO: 중복제거할 방법 고민
         Whip whip = new Whip(mocha2);
 
         Double cost = whip.cost();
