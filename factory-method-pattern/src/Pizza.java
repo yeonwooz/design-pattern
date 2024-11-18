@@ -1,4 +1,4 @@
-public class Pizza implements IPizza {
+public abstract class Pizza implements IPizza {
     @Override
     public void prepare() {
 
