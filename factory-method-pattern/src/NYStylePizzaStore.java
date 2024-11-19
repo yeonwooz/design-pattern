@@ -1,8 +1,7 @@
 public class NYStylePizzaStore extends PizzaStore {
     Pizza pizza;
 
-    @Override
-    Pizza createPizza(String type) {
+    Pizza createPizza(String type) {     // 오버라이드하지 말것
         if (type.equals("cheese")) {
             pizza = new NYStyleCheesePizza();
         } else if (type.equals("pepperoni")) {
