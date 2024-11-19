@@ -1,7 +1,10 @@
 package pizzas;
 
 public abstract class PizzaStore {
-
+    /*
+        추상 팩토리 패턴 : 제품군을 생성하는 팩토리 인터페이스(NY / Chicago IngredientFactory)들을 만든다.
+        그리고 구상클래스는 서브클래스(NYStore / ChicagoStore)에서 만든다.
+    */
     public Pizza orderPizza(String type) {
         Pizza pizza;   // 추상 클래스에 의존
 
