@@ -1,3 +1,5 @@
+package pizzas;
+
 public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {
