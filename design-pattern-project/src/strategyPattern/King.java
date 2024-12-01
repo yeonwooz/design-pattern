@@ -1,7 +1,5 @@
 package strategyPattern;
 
-import java.lang.Character;
-
 public class King extends Character {
     @Override
     public void fight() {

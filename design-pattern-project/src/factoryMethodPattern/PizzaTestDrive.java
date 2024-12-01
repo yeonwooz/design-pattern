@@ -1,6 +1,9 @@
-package abstractFactoryPattern;
+package factoryMethodPattern;
 
-import abstractFactoryPattern.pizzas.*;
+import abstractFactoryPattern.pizzas.NYStylePizzaStore;
+import abstractFactoryPattern.pizzas.ChicagoStylePizzaStore;
+import abstractFactoryPattern.pizzas.Pizza;
+import abstractFactoryPattern.pizzas.PizzaStore;
 
 public class PizzaTestDrive {
     public static void main(String[] args) {
@@ -11,8 +14,6 @@ public class PizzaTestDrive {
         System.out.println("에단이 주문한 " + pizza.getName() + "\n");
 
         pizza = chicagoStore.orderPizza("cheese");
-        if (pizza != null) {
-            System.out.println("조던이 주문한 " + pizza.getName() + "\n");
-        }
+        System.out.println("조던이 주문한 " + pizza.getName() + "\n");
     }
 }

@@ -1,7 +1,7 @@
 package abstractFactoryPattern.pizzas;
 
-import ingredients.NYPizzaIngredientFactory;
-import ingredients.PizzaIngredientFactory;
+import abstractFactoryPattern.ingredients.NYPizzaIngredientFactory;
+import abstractFactoryPattern.ingredients.PizzaIngredientFactory;
 
 public class NYStylePizzaStore extends PizzaStore {
     protected Pizza createPizza(String item) {

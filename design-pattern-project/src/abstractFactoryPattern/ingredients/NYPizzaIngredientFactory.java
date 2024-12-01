@@ -1,16 +1,16 @@
 package abstractFactoryPattern.ingredients;
 
-import ingredients.cheeses.Cheese;
-import ingredients.cheeses.ReggianoCheese;
-import ingredients.clams.Clams;
-import ingredients.clams.FreshClams;
-import ingredients.dough.Dough;
-import ingredients.dough.ThinCrustDough;
-import ingredients.pepperonis.Pepperoni;
-import ingredients.pepperonis.SlicedPepperoni;
-import ingredients.sauces.MarinaraSauce;
-import ingredients.sauces.Sauce;
-import ingredients.veggies.*;
+import abstractFactoryPattern.ingredients.cheeses.Cheese;
+import abstractFactoryPattern.ingredients.cheeses.ReggianoCheese;
+import abstractFactoryPattern.ingredients.clams.Clams;
+import abstractFactoryPattern.ingredients.clams.FreshClams;
+import abstractFactoryPattern.ingredients.dough.Dough;
+import abstractFactoryPattern.ingredients.dough.ThinCrustDough;
+import abstractFactoryPattern.ingredients.pepperonis.Pepperoni;
+import abstractFactoryPattern.ingredients.pepperonis.SlicedPepperoni;
+import abstractFactoryPattern.ingredients.sauces.MarinaraSauce;
+import abstractFactoryPattern.ingredients.sauces.Sauce;
+import abstractFactoryPattern.ingredients.veggies.*;
 
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     @Override

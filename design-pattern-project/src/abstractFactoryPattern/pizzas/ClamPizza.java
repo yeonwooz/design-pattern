@@ -1,6 +1,6 @@
 package abstractFactoryPattern.pizzas;
 
-import ingredients.PizzaIngredientFactory;
+import abstractFactoryPattern.ingredients.PizzaIngredientFactory;
 
 public class ClamPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
