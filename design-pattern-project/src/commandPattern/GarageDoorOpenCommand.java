@@ -1,9 +1,9 @@
 package commandPattern;
 
 public class GarageDoorOpenCommand implements Command {
-    GarageDoor door;
+    Door door;
 
-    public GarageDoorOpenCommand(GarageDoor door) {
+    public GarageDoorOpenCommand(Door door) {
         this.door = door;
     }
 
