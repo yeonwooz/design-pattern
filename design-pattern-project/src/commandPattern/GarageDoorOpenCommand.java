@@ -7,8 +7,11 @@ public class GarageDoorOpenCommand implements Command {
         this.door = door;
     }
 
-    @Override
     public void execute() {
         door.up();
+    }
+
+    public void undo() {
+        door.down();
     }
 }
