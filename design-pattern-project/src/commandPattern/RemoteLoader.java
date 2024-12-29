@@ -23,12 +23,14 @@ public class RemoteLoader {
         remote.offButtonWasPushed(0);
         remote.undoButtonWasPushed();
 
-        System.out.println(remote);
+//        System.out.println(remote);
 
         remote.offButtonWasPushed(0);
         remote.onButtonWasPushed(0);
         remote.undoButtonWasPushed();
 
         System.out.println(remote);
+//        System.out.println(remote.toString());
+
     }
 }
